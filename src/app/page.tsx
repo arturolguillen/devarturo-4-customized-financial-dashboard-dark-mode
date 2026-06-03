@@ -13,6 +13,7 @@ import TopAppBarLeftCol from "@/components/TopAppBarLeftCol";
 import TopAppBarLogo from "@/components/TopAppBarLogo";
 import TopAppBarMenu from "@/components/TopAppBarMenu";
 import TopAppBarRightCol from "@/components/TopAppBarRightCol";
+import TopAppBarUser from "@/components/TopAppBarUser";
 
 export default function Home() {
     return (
@@ -35,6 +36,7 @@ export default function Home() {
                     </TopAppBarLeftCol>
                     <TopAppBarRightCol>
                         <TopAppBarActions />
+                        <TopAppBarUser />
                     </TopAppBarRightCol>
                 </TopAppbar>
             </MainWrapper>
