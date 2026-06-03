@@ -18,6 +18,7 @@ import TopAppBarMenu from "@/components/TopAppBarMenu";
 import TopAppBarRightCol from "@/components/TopAppBarRightCol";
 import TopAppBarUser from "@/components/TopAppBarUser";
 import TotalBalance from "@/components/TotalBalance";
+import Volume from "@/components/Volume";
 
 export default function Home() {
     return (
@@ -47,6 +48,7 @@ export default function Home() {
                     <KpiGrid>
                         <TotalBalance />
                         <Profit />
+                        <Volume />
                     </KpiGrid>
                 </Dashboard>
             </MainWrapper>
