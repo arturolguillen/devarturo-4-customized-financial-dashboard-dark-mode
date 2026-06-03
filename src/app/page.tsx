@@ -1,4 +1,6 @@
+import Dashboard from "@/components/Dashboard";
 import InvestNowButton from "@/components/InvestNowButton";
+import KpiGrid from "@/components/KpiGrid";
 import MainWrapper from "@/components/MainWrapper";
 import SearchBar from "@/components/SearchBar";
 import SideNavbar from "@/components/SideNavbar";
@@ -14,6 +16,7 @@ import TopAppBarLogo from "@/components/TopAppBarLogo";
 import TopAppBarMenu from "@/components/TopAppBarMenu";
 import TopAppBarRightCol from "@/components/TopAppBarRightCol";
 import TopAppBarUser from "@/components/TopAppBarUser";
+import TotalBalance from "@/components/TotalBalance";
 
 export default function Home() {
     return (
@@ -39,6 +42,11 @@ export default function Home() {
                         <TopAppBarUser />
                     </TopAppBarRightCol>
                 </TopAppbar>
+                <Dashboard>
+                    <KpiGrid>
+                        <TotalBalance />
+                    </KpiGrid>
+                </Dashboard>
             </MainWrapper>
         </>
     );
