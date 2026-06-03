@@ -24,6 +24,9 @@ import TopAppBarMenu from "@/components/TopAppBarMenu";
 import TopAppBarRightCol from "@/components/TopAppBarRightCol";
 import TopAppBarUser from "@/components/TopAppBarUser";
 import TotalBalance from "@/components/TotalBalance";
+import TransactionList from "@/components/TransactionList";
+import Transactions from "@/components/Transactions";
+import TransactionsHeader from "@/components/TransactionsHeader";
 import Volume from "@/components/Volume";
 
 export default function Home() {
@@ -63,6 +66,10 @@ export default function Home() {
                             <ChartGraphic />
                             <ChartFooter />
                         </ChartArea>
+                        <Transactions>
+                            <TransactionsHeader />
+                            <TransactionList />
+                        </Transactions>
                     </ActivitiesGrid>
                 </Dashboard>
             </MainWrapper>
