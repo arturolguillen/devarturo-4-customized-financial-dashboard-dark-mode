@@ -2,6 +2,7 @@ import Dashboard from "@/components/Dashboard";
 import InvestNowButton from "@/components/InvestNowButton";
 import KpiGrid from "@/components/KpiGrid";
 import MainWrapper from "@/components/MainWrapper";
+import Profit from "@/components/Profit";
 import SearchBar from "@/components/SearchBar";
 import SideNavbar from "@/components/SideNavbar";
 import SideNavbarFooter from "@/components/SideNavbarFooter";
@@ -45,6 +46,7 @@ export default function Home() {
                 <Dashboard>
                     <KpiGrid>
                         <TotalBalance />
+                        <Profit />
                     </KpiGrid>
                 </Dashboard>
             </MainWrapper>
