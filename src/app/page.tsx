@@ -8,7 +8,11 @@ import SideNarbarMenu from "@/components/SideNavbarMenu";
 import SideNavbarSupportLink from "@/components/SideNavbarSupportLink";
 import SideNavbarUser from "@/components/SideNavbarUser";
 import TopAppbar from "@/components/TopAppBar";
+import TopAppBarActions from "@/components/TopAppBarActions";
+import TopAppBarLeftCol from "@/components/TopAppBarLeftCol";
 import TopAppBarLogo from "@/components/TopAppBarLogo";
+import TopAppBarMenu from "@/components/TopAppBarMenu";
+import TopAppBarRightCol from "@/components/TopAppBarRightCol";
 
 export default function Home() {
     return (
@@ -24,8 +28,14 @@ export default function Home() {
             </SideNavbar>
             <MainWrapper>
                 <TopAppbar>
-                    <TopAppBarLogo />
-                    <SearchBar />
+                    <TopAppBarLeftCol>
+                        <TopAppBarLogo />
+                        <SearchBar />
+                        <TopAppBarMenu />
+                    </TopAppBarLeftCol>
+                    <TopAppBarRightCol>
+                        <TopAppBarActions />
+                    </TopAppBarRightCol>
                 </TopAppbar>
             </MainWrapper>
         </>
