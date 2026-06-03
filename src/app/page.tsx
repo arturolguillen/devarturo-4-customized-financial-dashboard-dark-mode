@@ -1,3 +1,8 @@
+import ActivitiesGrid from "@/components/ActivitiesGrid";
+import ChartArea from "@/components/ChartArea";
+import ChartFooter from "@/components/ChartFooter";
+import ChartGraphic from "@/components/ChartGraphic";
+import ChartHeader from "@/components/ChartHeader";
 import Dashboard from "@/components/Dashboard";
 import InvestNowButton from "@/components/InvestNowButton";
 import KpiGrid from "@/components/KpiGrid";
@@ -52,6 +57,13 @@ export default function Home() {
                         <Volume />
                         <Roi />
                     </KpiGrid>
+                    <ActivitiesGrid>
+                        <ChartArea>
+                            <ChartHeader />
+                            <ChartGraphic />
+                            <ChartFooter />
+                        </ChartArea>
+                    </ActivitiesGrid>
                 </Dashboard>
             </MainWrapper>
         </>
