@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function TopAppBarRightCol({ children }: {
     children: React.ReactNode;
 }) {
