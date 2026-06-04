@@ -3,7 +3,7 @@ import Graphic from "./../images/graphic.png";
 
 export default function ChartGraphic() {
     return (
-        <div className="relative">
+        <div className="relative flex-1">
             <Image
                 src={Graphic}
                 alt="Chart Graphic"

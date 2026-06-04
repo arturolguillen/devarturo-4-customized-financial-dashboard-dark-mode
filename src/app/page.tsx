@@ -26,6 +26,7 @@ import TopAppBarUser from "@/components/TopAppBarUser";
 import TotalBalance from "@/components/TotalBalance";
 import TransactionList from "@/components/TransactionList";
 import Transactions from "@/components/Transactions";
+import TransactionsFooter from "@/components/TransactionsFooter";
 import TransactionsHeader from "@/components/TransactionsHeader";
 import Volume from "@/components/Volume";
 
@@ -69,6 +70,7 @@ export default function Home() {
                         <Transactions>
                             <TransactionsHeader />
                             <TransactionList />
+                            <TransactionsFooter />
                         </Transactions>
                     </ActivitiesGrid>
                 </Dashboard>
