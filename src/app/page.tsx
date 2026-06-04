@@ -1,4 +1,6 @@
 import ActivitiesGrid from "@/components/ActivitiesGrid";
+import Assets from "@/components/Assets";
+import AssetsHeader from "@/components/AssetsHeader";
 import ChartArea from "@/components/ChartArea";
 import ChartFooter from "@/components/ChartFooter";
 import ChartGraphic from "@/components/ChartGraphic";
@@ -73,6 +75,9 @@ export default function Home() {
                             <TransactionsFooter />
                         </Transactions>
                     </ActivitiesGrid>
+                    <Assets>
+                        <AssetsHeader />
+                    </Assets>
                 </Dashboard>
             </MainWrapper>
         </>
