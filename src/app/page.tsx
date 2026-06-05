@@ -4,6 +4,7 @@ import AssetsHeader from "@/components/AssetsHeader";
 import AssetsTable from "@/components/AssetsTable";
 import AssetsTableBody from "@/components/AssetsTableBody";
 import AssetsTableHead from "@/components/AssetsTableHead";
+import BottomNavbar from "@/components/BottomNavbar";
 import ChartArea from "@/components/ChartArea";
 import ChartFooter from "@/components/ChartFooter";
 import ChartGraphic from "@/components/ChartGraphic";
@@ -86,6 +87,8 @@ export default function Home() {
                         </AssetsTable>
                     </Assets>
                 </Dashboard>
+                <BottomNavbar />
+                <div className="h-20 lg:hidden"></div>
             </MainWrapper>
         </>
     );
