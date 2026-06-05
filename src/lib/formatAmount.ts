@@ -15,3 +15,12 @@ export function formatAmount(value: number): string {
         maximumFractionDigits: 1,
     }).format(value / 1000)}K`;
 }
+
+export function usdFormatter(value: number) {
+    return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    }).format(value);
+}

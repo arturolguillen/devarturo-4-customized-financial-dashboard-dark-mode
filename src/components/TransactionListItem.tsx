@@ -1,13 +1,7 @@
+import { usdFormatter } from "@/lib/formatAmount";
 import type { Transaction } from "@/lib/transactions";
 import clsx from "clsx";
 import { ArrowRightLeft, MoveDownLeft, MoveUpRight } from "lucide-react";
-
-const usdBalanceFormatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-});
 
 export default function TransactionListItem({ transaction }: {
     transaction: Transaction;
@@ -39,7 +33,7 @@ export default function TransactionListItem({ transaction }: {
                     {amount} {currency}
                 </p>
                 <p className="text-[10px] text-zinc-500">
-                    {usdBalanceFormatter.format(balance)} {'USD'}
+                    {usdFormatter(balance)} {'USD'}
                 </p>
             </div>
         </div>

@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from "uuid";
 import BitcoinIcon from "./BitcoinIcon";
 import EthereumIcon from "./EthereumIcon";
 import SolanaIcon from "./SolanaIcon";
+import AssetsTableRow from "./AssetsTableRow";
 
-type AssetItem = {
+export type AssetItem = {
     id: string;
-    color: "orange" | "indigo" | "emerald";
     icon: React.ReactNode;
     coin: string;
     coin_currency: string;
@@ -19,19 +19,17 @@ type AssetItem = {
 const assetItems: AssetItem[] = [
     {
         id: uuidv4(),
-        color: 'orange',
         icon: <BitcoinIcon />,
         coin: 'Bitcoin',
         coin_currency: 'BTC',
         price: 68432.10,
         exchange: '2.45%',
         exchange_type: 'up',
-        balance: 1240,
+        balance: 1.240,
         value_usd: 84855.80,
     },
     {
         id: uuidv4(),
-        color: 'indigo',
         icon: <EthereumIcon />,
         coin: 'Ethereum',
         coin_currency: 'ETH',
@@ -43,7 +41,6 @@ const assetItems: AssetItem[] = [
     },
     {
         id: uuidv4(),
-        color: 'emerald',
         icon: <SolanaIcon />,
         coin: 'Solana',
         coin_currency: 'SOL',
@@ -57,6 +54,8 @@ const assetItems: AssetItem[] = [
 
 export default function AssetsTableBody() {
     return (
-        <tbody></tbody>
+        <tbody className="divide-y divide-zinc-800">
+            {assetItems.map(item => <AssetsTableRow key={item.id} item={item} />)}
+        </tbody>
     );
 }
